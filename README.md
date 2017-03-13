@@ -56,8 +56,8 @@ La maison du Professeur Chabalet a pour URI http://www.lamaisondumeurtre.fr/inst
 
 	SELECT (COUNT(?personne) AS ?nbPersonnes) WHERE
 	{
-	data:LaMaisonDuMeurtre cluedo:maisonContientPiece ?piece .
-	?piece cluedo:pieceContientPersonne ?personne .
+		data:LaMaisonDuMeurtre cluedo:maisonContientPiece ?piece .
+		?piece cluedo:pieceContientPersonne ?personne .
 	}
 
 **Resultat:**
@@ -862,54 +862,55 @@ L'arme du crime ne se trouve pas dans la pièce où se situe la victime
 
 **Resultat:**
 
-<?xml version="1.0" encoding="UTF-8"?>
-<sparql xmlns="http://www.w3.org/2005/sparql-results#">
-  <head>
-    <variable name="objet"/>
-  </head>
-  <results>
-    <result>
-      <binding name="objet">
-        <uri>http://www.lamaisondumeurtre.fr/instances#Chandelier</uri>
-      </binding>
-    </result>
-    <result>
-      <binding name="objet">
-        <uri>http://www.lamaisondumeurtre.fr/instances#Marteau</uri>
-      </binding>
-    </result>
-    <result>
-      <binding name="objet">
-        <uri>http://www.lamaisondumeurtre.fr/instances#Livre</uri>
-      </binding>
-    </result>
-    <result>
-      <binding name="objet">
-        <uri>http://www.lamaisondumeurtre.fr/instances#Revolver</uri>
-      </binding>
-    </result>
-    <result>
-      <binding name="objet">
-        <uri>http://www.lamaisondumeurtre.fr/instances#PicAGlace</uri>
-      </binding>
-    </result>
-    <result>
-      <binding name="objet">
-        <uri>http://www.lamaisondumeurtre.fr/instances#EauDeJavel</uri>
-      </binding>
-    </result>
-    <result>
-      <binding name="objet">
-        <uri>http://www.lamaisondumeurtre.fr/instances#Lacet</uri>
-      </binding>
-    </result>
-    <result>
-      <binding name="objet">
-        <uri>http://www.lamaisondumeurtre.fr/instances#Nokia3310</uri>
-      </binding>
-    </result>
-  </results>
-</sparql>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+	  <head>
+	    <variable name="objet"/>
+	  </head>
+	  <results>
+	    <result>
+	      <binding name="objet">
+		<uri>http://www.lamaisondumeurtre.fr/instances#Chandelier</uri>
+	      </binding>
+	    </result>
+	    <result>
+	      <binding name="objet">
+		<uri>http://www.lamaisondumeurtre.fr/instances#Marteau</uri>
+	      </binding>
+	    </result>
+	    <result>
+	      <binding name="objet">
+		<uri>http://www.lamaisondumeurtre.fr/instances#Livre</uri>
+	      </binding>
+	    </result>
+	    <result>
+	      <binding name="objet">
+		<uri>http://www.lamaisondumeurtre.fr/instances#Revolver</uri>
+	      </binding>
+	    </result>
+	    <result>
+	      <binding name="objet">
+		<uri>http://www.lamaisondumeurtre.fr/instances#PicAGlace</uri>
+	      </binding>
+	    </result>
+	    <result>
+	      <binding name="objet">
+		<uri>http://www.lamaisondumeurtre.fr/instances#EauDeJavel</uri>
+	      </binding>
+	    </result>
+	    <result>
+	      <binding name="objet">
+		<uri>http://www.lamaisondumeurtre.fr/instances#Lacet</uri>
+	      </binding>
+	    </result>
+	    <result>
+	      <binding name="objet">
+		<uri>http://www.lamaisondumeurtre.fr/instances#Nokia3310</uri>
+	      </binding>
+	    </result>
+	  </results>
+	</sparql>
+
 ## Question 16 :
 
 Personne ne se situe dans une pièce où a été posée l'arme du crime
